@@ -2,13 +2,21 @@ package com.kamrul.oop_to_abstraction;
 public class Test {
     public static void main(String[] args) {
 
-        Player p = new Player();
-        p.play();
+        Shape shape;
+
+        shape = new Rectangle(10, 20);
+        shape.area();
+
+        shape = new Triangle(15, 25);
+        shape.area();
+
+        shape = new Circle(11);
+        shape.area();
 
     }
 
     /*
-    Difference between "class vs interface"
+    Difference between "abstract class vs abstract interface"
      1. একটি class আরেকটি class কে extends করতে পারে।।
         একটি interface আরেকটি interface কে extends করতে পারে।। তবে
         একটি class আরেকটি interface কে extends করতে পারে না, এক্ষেত্রে implements করবে।।
